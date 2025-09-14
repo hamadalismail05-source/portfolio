@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <!-- Load our stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Todo List</h1>
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." required>
+      <button type="submit">Add</button>
+    </form>
+    <ul id="taskList"></ul>
+  </div>
+
+  <!-- Load our JavaScript -->
+  <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+</body>
+</html>
